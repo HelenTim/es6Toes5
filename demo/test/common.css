@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+div{
+  border: 1rpx solid #fff;
+}
+/* commont */
+p{
+  font-size: 24rpx;
+  /* color: aqua; */
+}

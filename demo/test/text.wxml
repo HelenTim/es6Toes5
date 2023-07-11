@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="head-top">
+    <image class="head-top-bg" wx:if="{{!helpId && speedStatus === 2}}" src="../images/img-speedHero-complete.png"/>
+    <image class="head-top-bg" wx:else src="../images/img-speedHero.png"/>
+    <!-- <input type="text" value="hahha"/> -->
+    <input class='item-value' placeholder='请输入收货人'></input>
+    <!-- <image class="head-top-cloud" src="../images/bg-cloud.png"/> -->
+    <block wx:if="{{!(speedStatus == 2 && !helpId)}}">
+      <image class="head-top-rocket top_ani {{isLongPress?'animate':''}}" src="../images/icon-rocket.png"/>
+      <image class="head-top-rocket under_ani {{isLongPress?'animate':''}}" src="../images/icon-rocket.png"/>
+      <image class="head-top-rocket r_s top_ani {{isLongPress?'animate':''}}" src="../images/icon-rocket.png"/>
+      <image class="head-top-rocket r_s under_ani {{isLongPress?'animate':''}}" src="../images/icon-rocket.png"/>
+    </block>
+    <view jsFF data-id="{{34}}">
+      dsf
+    
+    </view>
+      
+  </view>

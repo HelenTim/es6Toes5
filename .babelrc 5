@@ -1,0 +1,9 @@
+// 如果我们在项目根目录下写了 .babelc文件，那么babel插件就以这里的为准
+// 我们这里修改了文件名字，防止生效。
+{
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime"
+        ]
+    ]
+}
