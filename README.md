@@ -1,4 +1,4 @@
-# wxappSlim
+# es6toes5
 gulp 压缩编译代码
 
 ```
