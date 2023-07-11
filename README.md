@@ -1,9 +1,8 @@
 # wxappSlim
-gulp 压缩小程序、小程序瘦身
+gulp 压缩编译代码
 
-修改小程序目录地址，以及压缩后的输出地址
 ```
-const entry = '../wx'       // 小程序地址
+const entry = '../wx'       // 资源入口
 const output = './dist'     // 输出目录
 ```
 
@@ -17,3 +16,6 @@ const output = './dist'     // 输出目录
 
 
 js 压缩使用 gulp-uglify, wxss压缩使用 gulp-clean-css, wxml 使用 gulp-htmlmin 过程存在bug, 暂时关闭
+### 页面配合polyfill使用
+  + 直接 npm run dev 即可。尤其是在使用 async函数时，polyfill里面会提供一个特别的变量 regeneratorRuntime
+  + 如果 npm run build  那么转出来的代码就不要任何poltfill了。但是编译的结果也导致无法单独调用某个函数了。
